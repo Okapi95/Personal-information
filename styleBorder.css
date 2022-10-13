@@ -1,0 +1,68 @@
+body {
+   border: 4px solid darkred;
+}
+
+
+.page {
+   border: 2px solid rgb(21, 184, 62);
+}
+
+.header-container {
+   border: 2px solid black;
+}
+
+.header-name {
+   border: 1px solid yellowgreen;
+}
+
+.header-print-resume {
+   border: 1px solid yellowgreen;
+}
+
+.header-email {
+   border: 1px solid yellowgreen;
+}
+
+.navigation {
+   border: 2px solid blue;
+}
+
+.personal-photo {
+   border: 2px solid black;
+}
+
+ul.nav-main-list {
+   border: 2px dashed rgb(61, 61, 114);
+}
+
+ul.nav-main-list li {
+   border: 1px dashed rgb(98, 30, 107);
+}
+
+.information-section {
+   border: 2px solid rgb(35, 150, 60);
+}
+
+.information-section div {
+   border: 1px dashed #3370b68a;
+}
+
+.info p {
+   border: 1px solid #fff;
+}
+
+.info h3  {
+   /* border: 1px solid #fff; */
+}
+
+.footer {
+   border: 1px solid #fff;
+}
+
+.footer div {
+   border: 1px solid #fff;
+}
+
+.gallery__photo-previews, .gallery__photo-full {
+   border: 1px solid red;
+}

@@ -3,10 +3,142 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="styleBorder.css"> -->
     <title>Портфолио Junior верстальщика</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,500&family=Russo+One&display=swap" rel="stylesheet">
 
+  </head>
+  <body>
+    <div class="page">
+      <header class="header-container">
+          <div class="header-name">
+            <h1>Мария Шпак</h1>
+          </div>
+          <div class="header-print-resume">
+            <p><a>JUNIOR Frontend developer</a></p>
+          </div>
+          <div class="header-email">
+            <p> Есть вопросы? Напишите мне:
+              <a class="email" href="mailto:mari.shpak.1995@gmail.com"> mari.shpak.1995@gmail.com </a>
+            </p>
+          </div>
+      </header>
+
+      <nav class="navigation">
+        <ul class="nav-main-list">
+          <li>
+            <a class="nav-main-link nav-about-me">ОБО МНЕ</a>
+          </li>
+          <li>
+            <a class="nav-main-link">РЕЗЮМЕ</a>
+          </li> 
+        </ul>
+        <div class="personal-photo">
+          <img src="img/DSC_0993_ON1.jpg" alt="личное фото" width="150" height="150">
+        </div>  
+        <ul class="nav-main-list">
+          <li>
+            <a class="nav-main-link">ПОТРФОЛИО</a>
+          </li>
+          <li>
+            <a class="nav-main-link">КОНТАКТЫ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="information-section">
+        <div class="info about-self">
+          <h3>О себе</h3>
+          <p>Крутой фронтендер-джун! <br> <br>
+          Я училась у лучшего ментора и по совместительству у моего мужа - Зыкова Ивана. Он ТОП, а значит - я тоже ТОП.</p>         
+        </div>
+        <div class="info personal-date">
+          <h3>Персональные данные</h3>
+          <p> 
+            <span>Дата рождения:&ensp;</span> 21/02/1995 <br>
+            <span>Дата рождения мужа:&ensp;</span> 26/09/1995 <br>
+            <span>Телефон:&ensp;</span> 89827393878 <br>
+            <span>E-mail:&ensp;</span> mari.shpak.1995@gmail.com <br>
+            <span>Адрес:&ensp;</span> Екатеринбург
+          </p> 
+        </div>
+        <div class="info work-competencies">
+          <h3>Рабочие компетенции</h3>
+          <p> я много чего могу пвоаплуелота поадлцущшк гергурпалоптлодфлв ффоушоц</p>
+        </div>
+      </section>
+
+      <section class="gallery hide-element">
+        <h2>Люблю пить кофе в мороз</h2>
+        <p class="gallery__photo-full">
+          <button class="button-previous"> <img class="button" src="img/button-previous.svg" alt="Предыдущее фото"></button>
+          <img class="full-photo" src="img/1665409612083.jpg" alt="Фото большое">
+          <button class="button-next"> <img src="img/button-next.svg" alt="Следующее фото"> </button>
+        </p>
+        <p class="gallery__photo-previews">
+          <button class="gallery__photo-preview" type="button">
+            <img src="img/1665409552282.jpg" alt="Превью с микрофоном">
+            <span>Любимый герой "Гарри Поттера": Северус Снейп</span>
+          </button>
+          <button class="gallery__photo-preview" type="button">
+            <img src="img/1665409612083.jpg" alt="Превью с клавиатурой">
+            <span>Люблю пить кофе в мороз</span>
+          </button>
+          <button class="gallery__photo-preview" type="button">
+            <img src="img/1665409696614.jpg" alt="Превью с табличкой">
+            <span>Обожаю поезда, как Шелдон Купер</span>
+          </button>
+          <button class="gallery__photo-preview" type="button">
+            <img src="img/1665409839878.jpg" alt="Превью с деревом">
+            <span>В свободное время созерцаю эстетику питерских парадных</span>
+          </button>
+          <button class="gallery__photo-preview" type="button">
+            <img src="img/1665409903735.jpg" alt="Превью с деревом">
+            <span>Стильно гуляю в любую погоду</span>
+          </button>
+          <button class="gallery__photo-preview" type="button">
+            <img src="img/1665409991174.jpg" alt="Превью с деревом">
+            <span>Любимая бургерная - "Краснодарский парень", г.Екатеринбург</span>
+          </button>
+          <button class="gallery__photo-preview" type="button">
+            <img src="img/1665410024282.jpg" alt="Превью с деревом">
+            <span>Летом люблю скучать по зиме</span>
+          </button>
+          <button class="gallery__photo-preview" type="button">
+            <img src="img/1665410086335.jpg" alt="Превью с деревом">
+            <span>Рисую по одной картине раз в год</span>
+          </button>
+        </p>
+      </section>
+
+      <footer class="footer">
+        <div>
+          <span>Спасибо, что зашли</span>
+        </div>
+        <div>
+          <span> 2022 </span>
+        </div>
+        <div class="footer-contacts">
+          <a>tel</a>
+          <a>git</a>
+          <a>g-mail</a>
+          <a>what</a>
+        </div>
+      </footer>
+
+    </div>
+    <script src="AboutMe_slider_photo.js"></script>
+  </body>
+
+</html>
+
+
+
+
+
+<!-- 
   <body>
     <header class="page-header">
       <div class="container">
@@ -65,5 +197,4 @@
         <a class="footer-phone" href="tel:+79827393878">+7 982 739 38 78</a>
       </div>
     </footer>
-  </body>
-</html>
+  </body> -->
