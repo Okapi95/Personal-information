@@ -66,3 +66,9 @@ ul.nav-main-list li {
 .gallery__photo-previews, .gallery__photo-full {
    border: 1px solid red;
 }
+
+.footer div {
+   
+   border: 1px solid red;
+   
+}
