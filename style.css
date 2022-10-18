@@ -10,7 +10,7 @@ body {
 
 .page {
   max-width: 1000px;
-  min-width: 800px; /*fit-content*/
+  min-width: 800px; 
   margin: 0 auto;
 } 
 
@@ -20,7 +20,7 @@ body {
   justify-content: space-between;
   width: auto;
   margin: auto;
-  height: 400px; /*было fit-content*/
+  height: 400px; 
   background-color: #47371e;
   background-image: url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox='0 0 44 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 12v-2L0 0v10l4 2h16zm18 0l4-2V0L22 10v2h16zM20 0v8L4 0h16zm18 0L22 8V0h16z' fill='%23c7ab59' fill-opacity='0.07' fill-rule='evenodd'/%3E%3C/svg%3E");
   background-size: auto 15px; 
@@ -95,7 +95,6 @@ ul.nav-main-list {
 ul.nav-main-list li {
   margin: 0 auto;
   list-style-type: none;
-  /* border-radius: 30px; */
 }
 
 ul.nav-main-list li:first-letter {
@@ -132,19 +131,13 @@ ul.nav-main-list li:hover:first-letter {
 
 
 section .info {
-  /* display: grid; */
   margin-top: 0px;
-  /* row-gap: 10px; */
   padding: 70px 35px 5px;
   padding-top: 70px;
-  
-  
-  /* align-items: start; */
 }
 
 section .info:nth-child(2) {
-  background-color: #b1984f67;
-  
+  background-color: #b1984f67; 
 }
 
 .info h3 {
@@ -156,8 +149,6 @@ section .info:nth-child(2) {
   color: #302718;
   border-bottom: 2px solid #669e3c;
 }
-
-
 
 .info h3::before {
   content: '';
@@ -185,7 +176,6 @@ width: fit-content;
 margin-left: auto;
 margin-right: auto;
 padding-left: 0px;
-
 }
 
 .info li {
@@ -231,8 +221,7 @@ padding-left: 0px;
   padding: 15px 0 10px 0;
   display: flex;
   justify-content: space-between;
-  background-color: #669e3c;
-  
+  background-color: #669e3c; 
 }
 
 .footer div {
@@ -256,9 +245,7 @@ padding-left: 0px;
   text-decoration: none;
 }
 
-/*///////////////////*/
 /* Слайдер Обо мне */
-
 .gallery {
   display: flex;
   flex-direction: column;
@@ -278,7 +265,6 @@ padding-left: 0px;
   display: flex;
   margin-bottom: 30px;
   align-items: center;
-
 }
 
 .gallery__photo-full img {
@@ -287,7 +273,6 @@ padding-left: 0px;
 }
 
 .gallery__photo-full button {
-
   display: none;
   height: 90px;
   background-color: #dac791;
@@ -351,13 +336,8 @@ padding-left: 0px;
   display: none;
 }
 
-
-/*/////////////////*/
 /*РЕЗЮМЕ*/
-
-
 .resume {
-  /* border: 1px solid green; */
   display: block;
   margin: 110px auto 80px auto;
   position: relative;
@@ -384,7 +364,6 @@ padding-left: 0px;
 section .resume-container {
   display: block;
   opacity: 0;
-  /* border: 1px solid black; */
   padding-top: 80px;
   width: 300px;
   height: 300px;
@@ -435,7 +414,6 @@ section .resume-container {
 
 /*ГЛАВНАЯ*/
 .portfolio {
-  /* border: 1px solid green; */
   color:rgba(80, 63, 34, 0.8);
   background-color: #c9b476;
   padding-bottom: 60px;
@@ -448,37 +426,36 @@ section .resume-container {
 .portfolio-button {
   display: block;
   margin: 0 auto;
-    box-sizing: border-box;
-      /* -webkit-appearance: none;
-      -moz-appearance: none; */
-      /* appearance: none; */
-      background-color: transparent; 
-      border: 2px solid #e74c3c;
-      border-radius: 15px;
-      /* color: #e74c3c; */
-      cursor: pointer;
-      /* display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex; */
-      /* -webkit-align-self: center;
-      -ms-flex-item-align: center; */
-      /* align-self: center; */
-      font-size: 1rem;
-      /* font-weight: 400; */
-      line-height: 1.5;
-      
-      padding: 1.2em 2.8em; /*было 1ю2ем 2ю8ем*/
-      /* text-decoration: none; */
-      text-align: center;
-      /* text-transform: uppercase; */
-      font-family: 'Montserrat', sans-serif; 
-      font-weight: 700; 
-      border: none;
-      color: #fff;
-      box-shadow: 0 0 40px 40px #669e3c inset, 0 0 0 0 #669e3c;
-      /* -webkit-transition: all 150ms ease-in-out; */
-      transition: all 150ms ease-in-out;
+  box-sizing: border-box;
+  /* -webkit-appearance: none;
+  -moz-appearance: none; */
+  /* appearance: none; */
+  background-color: transparent; 
+  border: 2px solid #e74c3c;
+  border-radius: 15px;
+  /* color: #e74c3c; */
+  cursor: pointer;
+  /* display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; */
+  /* -webkit-align-self: center;
+  -ms-flex-item-align: center; */
+  /* align-self: center; */
+  font-size: 1rem;
+  /* font-weight: 400; */
+  line-height: 1.5;
+  padding: 1.2em 2.8em; /*было 1ю2ем 2ю8ем*/
+  /* text-decoration: none; */
+  text-align: center;
+  /* text-transform: uppercase; */
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: 700; 
+  border: none;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #669e3c inset, 0 0 0 0 #669e3c;
+  /* -webkit-transition: all 150ms ease-in-out; */
+  transition: all 150ms ease-in-out;
 }
 
 .portfolio-button:hover {
