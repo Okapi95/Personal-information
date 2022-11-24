@@ -39,19 +39,19 @@ ul.nav-main-list li {
    border: 1px dashed rgb(98, 30, 107);
 }
 
-.information-section {
+.section-general {
    border: 2px solid rgb(35, 150, 60);
 }
 
-.information-section div {
+.section-general div {
    border: 1px dashed #3370b68a;
 }
 
-.info p {
+.section-general__part p {
    border: 1px solid #fff;
 }
 
-.info h3  {
+.section-general__part h3  {
    /* border: 1px solid #fff; */
 }
 

@@ -1,40 +1,40 @@
 
-const linkAboutMe = document.querySelector('.nav-about-me');
+const linkAboutMe = document.querySelector('.navigation__link_about');
 const galleryAboutMe = document.querySelector('.gallery');
 linkAboutMe.addEventListener('click', function () {
    linkHandler(galleryAboutMe);
 });
 
-const linkResume = document.querySelector('.nav-resume');
+const linkResume = document.querySelector('.navigation__link_resume');
 const resume = document.querySelector('.resume');
 linkResume.addEventListener('click', function () {
    linkHandler(resume);
 });
 
-const linkPortfolio = document.querySelector('.nav-portfolio');
+const linkPortfolio = document.querySelector('.navigation__link_portfolio');
 const portfolio = document.querySelector('.portfolio');
 linkPortfolio.addEventListener('click', function () {
    linkHandler(portfolio);
 });
 
-const linkGeneral = document.querySelector('.nav-general');
-const generalInformation = document.querySelector('.information-section');
+const linkGeneral = document.querySelector('.navigation__link_general');
+const generalInformation = document.querySelector('.section-general');
 linkGeneral.addEventListener('click', function () {
    linkHandler(generalInformation);
 });
 
 function linkHandler(selectedSection) {
-   if (selectedSection.classList.contains('visible')) return;
-   selectedSection.classList.remove('hide');
-   const visible = document.querySelector('.visible');
-   visible.classList.add('hide');
-   visible.classList.remove('visible');
-   selectedSection.classList.add('visible');
+   if (selectedSection.classList.contains('visibleJS')) return;
+   selectedSection.classList.remove('hideJS');
+   const visible = document.querySelector('.visibleJS');
+   visible.classList.add('hideJS');
+   visible.classList.remove('visibleJS');
+   selectedSection.classList.add('visibleJS');
 };
 
 let photosPreviews = document.querySelectorAll('.gallery__photo-preview img')
 let photoPreviewsСomments = document.querySelectorAll('.gallery__photo-preview span')
-let photoFullСomment = document.querySelector('.gallery.hide h2'); //изменила название класса, может не работать
+let photoFullСomment = document.querySelector('.gallery.hideJS h2');
 let fullPhoto = document.querySelector('.full-photo');
 let currentIndexFull = 1; 
 let switchPhotoByPreview = function (photoPreview, index, photoPreviewsСomment) {
@@ -49,11 +49,10 @@ for (var i = 0; i < photosPreviews.length; i++) {
 };
 
 
-let buttonNext = document.querySelector('.button-next');
-let buttonPrevious = document.querySelector('.button-previous');
+let buttonNext = document.querySelector('.gallery__button-next');
+let buttonPrevious = document.querySelector('.gallery__button-previous');
 let changePhotoByButtonNext = function () {
    buttonNext.addEventListener ('click', function () {
-      
       currentIndexFull++;
       if (currentIndexFull >= photosPreviews.length) {
          currentIndexFull = 0;

@@ -3,63 +3,58 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="styleBorder.css"> -->
     <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
     <title>Pet project Junior Frontend developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,500&family=Russo+One&display=swap" rel="stylesheet">
-
   </head>
   <body>
     <div class="page">
-      <header class="header-container">
-          <div class="header-name">
+      <header class="header">
+          <div class="header__name">
             <h1>Мария Шпак</h1>
           </div>
-          <div class="header-jobtitle">
+          <div class="header__jobtitle">
             <p><a>JUNIOR Frontend developer</a></p>
           </div>
-          <div class="header-email">
+          <div class="header__contact">
             <p> Есть вопросы? Напишите мне: 
-              <a class="email" href="mailto:mari.shpak.1995@gmail.com"> mari.shpak.1995@gmail.com </a>
+              <a class="header__email" href="mailto:mari.shpak.1995@gmail.com"> mari.shpak.1995@gmail.com </a>
             </p>
           </div>
       </header>
 
       <nav class="navigation">
-        <ul class="nav-main-list">
+        <ul class="navigation__list">
           <li>
-            <a class="nav-main-link nav-about-me">ОБО МНЕ</a>
+            <a class="navigation__link navigation__link_about">ОБО МНЕ</a>
           </li>
           <li>
-            <a class="nav-main-link nav-resume">РЕЗЮМЕ</a>
+            <a class="navigation__link navigation__link_resume">РЕЗЮМЕ</a>
           </li> 
         </ul>
-        <div class="personal-photo">
+        <div class="navigation__photo">
           <img src="img/DSC_0993_ON1.jpg" alt="личное фото" width="150">
-        </div>  
-        <div class="personal-photo-invisible">
-          <img src="img/DSC_0993_ON1.jpg" alt="личное фото" width="150">
-        </div>
-        <ul class="nav-main-list">
+        </div> 
+        <ul class="navigation__list">
           <li>
-            <a class="nav-main-link nav-portfolio">ПОТРФОЛИО</a>
+            <a class="navigation__link navigation__link_portfolio">ПОРTФОЛИО</a>
           </li>
           <li>
-            <a class="nav-main-link nav-general">ГЛАВНАЯ</a>
+            <a class="navigation__link navigation__link_general">ГЛАВНАЯ</a>
           </li>
         </ul>
       </nav>
-
-      <section class="information-section visible">
-        <div class="info about">
+    
+      <section class="section-general visibleJS">
+        <div class="section-general__part section-general__part_about">
           <h3>О себе</h3>
           <p>Привет! Меня зовут Мария, мне 27. <br><br>
             Я врач, который решил <em>круто</em> изменить свою жизнь! Как я <q><em>дошла до жизни такой</em></q> - расскажу на собеседовании. <br><br>
             А пока предлагаю вам узнать несколько <s>не</s>интересных фактов ОБО МНЕ.  </p>         
         </div>
-        <div class="info education">
+        <div class="section-general__part section-general__part_education">
           <h3>Образование</h3>
           <p> 
             <span>Frontend разработчик:&ensp;</span> ООО «Интерактивные обучающие технологии» (htmlacademy.ru), 2022 <br><br>
@@ -67,25 +62,24 @@
             <span>Педиатр:&ensp;</span> УГМУ, 2018 <br>
           </p> 
         </div>
-        <div class="info competencies">
+        <div class="section-general__part section-general__part_competencies">
           <h3>Рабочие компетенции</h3>
           <ul>
-            <li class="html">HTML5</li>
-            <li class="css">CSS3</li>
-            <li class="less">LESS</li>
-            <li class="js">JavaScript</li>
-            <li class="git">Git</li>
+            <li class="section-general__html">HTML5</li>
+            <li class="section-general__css">CSS3</li>
+            <li class="section-general__less">LESS</li>
+            <li class="section-general__js">JavaScript</li>
+            <li class="section-general__git">Git</li>
           </ul>
         </div>
-      </section>
+      </section> 
 
-      <!-- секция ОБО МНЕ -->
-      <section class="gallery hide">
+      <section class="gallery hideJS">
         <h2>Люблю пить кофе в мороз</h2>
         <p class="gallery__photo-full">
-          <button class="button-previous"> <img class="button" src="img/button-previous.svg" alt="Предыдущее фото"></button>
+          <button class="gallery__button-previous"> <img src="img/button-previous.svg" alt="Предыдущее фото"></button>
           <img class="full-photo" src="img/1665409612083.jpg" alt="Люблю кофе">
-          <button class="button-next"> <img src="img/button-next.svg" alt="Следующее фото"> </button>
+          <button class="gallery__button-next"> <img src="img/button-next.svg" alt="Следующее фото"> </button>
         </p>
         <p class="gallery__photo-previews">
           <button class="gallery__photo-preview" type="button">
@@ -121,37 +115,37 @@
             <span>Рисую по одной картине в год</span>
           </button>
         </p>
+      </section> 
+
+      <section class="resume hideJS">
+        <button class="resume__container">
+          <div>
+            <header>Моё РЕЗЮМЕ</header>
+            <p>Кликните по ссылке и посмотрите резюме</p>
+            <a class="resume__link" href="files/frontend developer, junior. Shpak Maria Resume.pdf" target="_blank">Открыть </a>
+          </div>
+        </button>
       </section>
 
-      <!-- секция РЕЗЮМЕ -->
-      <section class="resume hide">
-        <div class="resume-container">
-          <header>Моё РЕЗЮМЕ</header>
-          <p>Кликните по ссылке и посмотрите резюме</p>
-          <a class="button-download" href="files/frontend developer, junior. Shpak Maria Resume.pdf" target="_blank">Открыть </a>
-        </div>
+      <section class="portfolio hideJS"> 
+        <button class="portfolio__button"> ОТКРЫТЬ <br> <span>(увы, проект ещё в работе)</span></button> 
       </section>
 
-      <!-- секция ПОРТФОЛИО -->
-      <section class="portfolio hide"> 
-        <button class="portfolio-button third"> ПОСМОТРЕТЬ  <br> (увы, проект ещё в работе) </button> 
-      </section>
-    
       <footer class="footer">
-        <div class="footer-project">
-          <span>Pet project by Maria Shpak</span>
+        <div class="footer__project">
+          <span>Maria Shpak project</span>
         </div>
-        <div class="footer-year">
-          <span> 2022 </span>
+        <div class="footer__year">
+          <span>2022</span>
         </div>
-        <div class="footer-contacts">
-          <a class="footer-whatsUpp" target="_blank" href="https://api.whatsapp.com/send?phone=79827393878"><img src="img/icons8-whatsapp (1).svg" width="35"></a>
-          <a class="footer-github" target="_blank" href="https://github.com/Okapi95"><img src="img/icons-github-.svg" width="35"></a>
-          <a class="footer-email" href="mailto:mari.shpak.1995@gmail.com"> <img src="img/icons8-gmail.svg" width="35"> </a>
-          <a class="footer-telegram" target="_blank" href="https://t.me/mariShpak95"><img src="img/icons8-телеграмма-app.svg" width="35"></a>
+        <div class="footer__contacts">
+          <a target="_blank" href="https://api.whatsapp.com/send?phone=79827393878"><img src="img/icons8-whatsapp (1).svg" width="35"></a>
+          <a target="_blank" href="https://github.com/Okapi95"><img src="img/icons-github-.svg" width="35"></a>
+          <a href="mailto:mari.shpak.1995@gmail.com"> <img src="img/icons8-gmail.svg" width="35"> </a>
+          <a target="_blank" href="https://t.me/mariShpak95"><img src="img/icons8-телеграмма-app.svg" width="35"></a>
         </div>
       </footer>
-
+    
     </div>
     <script src="site-project.js"></script>
   </body>
