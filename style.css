@@ -137,7 +137,7 @@ body {
 
 
 
-
+/* Навигация */
 .navigation {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
@@ -271,7 +271,7 @@ body {
 
 
 
-
+/* Главная */
 .section-general {
   display: grid;
   width: auto;
@@ -454,6 +454,7 @@ body {
   }
 }
 
+/* Футер */
 .footer {
   padding: 15px 0 10px 0;
   display: flex;
