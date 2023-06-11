@@ -2,4 +2,8 @@ Pet-проект "Личный сайт". Стек технологий: HTML, C
 Автор: Шпак Мария.
 
 Прилагаю скриншоты сайта:
-<img src="/Okapi95/Friend-Meeting/raw/main/screenshots/screenshot_1.png" style="max-width: 100%;">
+
+<img src="screenshots/screenshot_1.png"/>
+<img src="screenshots/screenshot_2.png"/>
+<img src="screenshots/screenshot_3.png"/>
+<img src="screenshots/screenshot_4.png"/>
